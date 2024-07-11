@@ -1,9 +1,17 @@
 import asyncio
+import logging
+import sys
 import config as cfg
 
 
-async def main():
+def webhook_setup():
     pass
 
-if __name__ == '__main__':
-    asyncio.run(main())
+
+async def log_polling_setup():
+    pass
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, stream=sys.stdout)
+    asyncio.run(log_polling_setup())
